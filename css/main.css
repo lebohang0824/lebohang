@@ -168,5 +168,32 @@ a {
   position: absolute;
   background-color: rgba(18, 67, 100, 0.96);
 }
+.footer .socials {
+  width: 100%;
+  padding-top: 15px;
+  position: relative;
+}
+.footer .socials ul {
+  padding: 0;
+  margin: 0;
+}
+.footer .socials ul li {
+  display: inline-block;
+  margin-right: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+.footer .socials ul li img {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  height: 25px;
+  width: auto;
+}
+.footer .socials ul .copy {
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #FFF;
+  float: right;
+}
 
 /*# sourceMappingURL=main.css.map */
