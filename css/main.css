@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  font-family: "Muli", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 70vh;
+  position: relative;
+  background: url(../imgs/bg2.jpg) left no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header .container {
+  background-color: rgba(18, 67, 100, 0.96);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.header .container::before {
+  transform-origin: bottom right;
+  -ms-transform: skew(0deg, -5deg);
+  -webkit-transform: skew(0deg, -5deg);
+  transform: skew(0deg, -5deg);
+  background-color: #FFF;
+  position: absolute;
+  height: 30vh;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.header .container .main {
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  padding-top: 130px;
+  display: grid;
+  margin: auto;
+  width: 75%;
+}
+.header .container .main .titles {
+  padding: 5% 10px;
+}
+.header .container .main .titles h1 {
+  color: #FFF;
+  font-size: 30px;
+  padding: 5px 0px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.header .container .main .titles h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 5px 0px;
+  font-size: 16px;
+  color: #FFF;
+}
+.header .container .main .titles .socials {
+  padding-top: 15px;
+}
+.header .container .main .titles .socials ul {
+  padding: 0;
+  margin: 0;
+}
+.header .container .main .titles .socials ul li {
+  display: inline-block;
+  margin-right: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+.header .container .main .titles .socials ul li img {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  height: 25px;
+  width: auto;
+}
+.header .container .main .avatar {
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+}
+.header .container .main .avatar img {
+  border-radius: 50%;
+  height: auto;
+  width: 280px;
+}
+
+.about {
+  width: 75%;
+  height: 50vh;
+  margin: auto;
+  display: grid;
+  position: relative;
+  background-color: #FFF;
+  grid-template-columns: 1fr 2fr;
+}
+.about .skills {
+  padding: 25px 10px;
+}
+.about .skills h1 {
+  text-transform: uppercase;
+}
+.about .skills ul {
+  padding: 0;
+  margin: 0;
+}
+.about .skills ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+.about .skills ul li img {
+  width: 20px;
+  height: auto;
+}
+.about .main {
+  padding: 0 10px;
+}
+.about .main .section {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.about .main .section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #124364;
+}
+.about .main .section p {
+  padding-bottom: 10px;
+  font-weight: 300;
+  max-width: 600px;
+  font-size: 18px;
+}
+.about .main .section p b {
+  display: block;
+  letter-spacing: 2px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*# sourceMappingURL=main.css.map */
