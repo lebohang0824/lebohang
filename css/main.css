@@ -149,8 +149,15 @@ a {
   text-transform: uppercase;
 }
 .about .skills ul {
+  display: grid;
   padding: 0;
   margin: 0;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 480px) {
+  .about .skills ul {
+    grid-template-columns: 1fr;
+  }
 }
 .about .skills ul li {
   list-style: none;
