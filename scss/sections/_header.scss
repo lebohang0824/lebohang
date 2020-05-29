@@ -1,9 +1,12 @@
 .header {
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
     background: url(../imgs/bg2.jpg) left no-repeat;
     background-size: cover;
     position: relative;
+    @include md-screen {
+        height: 70vh;
+    }
     
     .container {
         background-color: transparentize(darken(#3498DB, 30%), .04);
@@ -26,6 +29,7 @@
         .menu {
             top: 20px;
             right: 20px;
+            z-index: 999;
             position: fixed;
             border-radius: 50%;
             display: inline-block;
@@ -37,12 +41,17 @@
             }
         }
         .main {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
+            box-sizing: border-box;
             position: relative;
             padding-top: 130px;
             display: grid;
             margin: auto;
-            width: 75%;
+            width: 95%;
+            @include md-screen {
+                grid-template-columns: 1fr 1fr;
+                width: 75%;
+            }
             .titles {
                 padding: 5% 10px;
                 h1 {
@@ -86,7 +95,10 @@
                 img {
                     border-radius: 50%;
                     height: auto;
-                    width: 280px;
+                    width: 200px;
+                    @include sm-screen {
+                        width: 280px;
+                    }
                 }
             }
         }

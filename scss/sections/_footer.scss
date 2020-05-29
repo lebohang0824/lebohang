@@ -36,7 +36,10 @@
                 letter-spacing: 1px;
                 font-weight: 200;
                 color: #FFF;
-                float: right;
+                
+                @include sm-screen {
+                    float: right;                    
+                }
             }
         }
     }

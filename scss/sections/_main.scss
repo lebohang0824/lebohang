@@ -1,11 +1,15 @@
 .about {
-    width: 75%;
+    width: 95%;
     min-height: 50vh;
     margin: auto;
     display: grid;
     position: relative;
     background-color: #FFF;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    @include sm-screen {
+        grid-template-columns: 1fr 2fr;
+        width: 75%;        
+    }
     .skills {
         padding: 25px 10px;
         h1 {
@@ -30,7 +34,7 @@
     .main {
         padding: 0 10px;
         .section {
-            padding: 10px;
+            padding: 10px 0px;
             margin-bottom: 30px;
             h1 {
                 font-size: 40px;
