@@ -176,7 +176,8 @@ a {
   width: 20px;
   height: auto;
 }
-.about .skills ul li span {
+.about .skills ul li a {
+  color: #333;
   padding-top: 5px;
 }
 .about .contributions {
