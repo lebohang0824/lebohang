@@ -26,15 +26,15 @@
 	<body>
 		<div class="navbar">
 			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="nav-item" href="#home">Home</a></li>
+				<li><a class="nav-item" href="#about">About</a></li>
+				<li><a class="nav-item" href="#projects">Projects</a></li>
+				<li><a class="nav-item" href="#experience">Experience</a></li>
+				<li><a class="nav-item" href="#education">Education</a></li>
+				<li><a class="nav-item" href="#contact">Contact</a></li>
 			</ul>
 		</div>
-		<section class="header">
+		<section id="home" class="header">
 			<div class="container">
 				<a href="javascript:void(0)" class="menu">
 					<img src="imgs/burger.png" alt="menu" />
@@ -93,7 +93,7 @@
 				</ul>
 			</div>
 			<div class="main">
-				<div class="section">
+				<div class="section" id="about">
 					<h1>About Me</h1>
 					<p>
 						I am self-driven and a tactical person. I do not only posses technical professional skills, 
@@ -102,7 +102,7 @@
 						and ask for it. 
 					</p>
 				</div>
-				<div class="section">
+				<div class="section" id="projects">
 					<h1>Projects</h1>
 					<p>
 						I started my career as PHP developer (2016), 2 years later I started exploring other stacks, that
@@ -120,7 +120,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="section">
+				<div class="section" id="experience">
 					<h1>Experience</h1>
 					<p>
 						<b>September 2019 - Present</b>
@@ -131,7 +131,7 @@
 						Full Stack Developer | Gatemedia | Freelance
 					</p>
 				</div>
-				<div class="section">
+				<div class="section" id="education">
 					<h1>Education</h1>
 					<div class="education">
 						<p>
@@ -144,7 +144,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="section">
+				<div class="section" id="contact">
 					<h1>Hire Me</h1>
 					<p>
 						lebohang0824@gmail.com<br>
@@ -174,7 +174,23 @@
 				</ul>
 			</div>
 		</section>
-		<!-- Scripts -->
 
+		<!-- Scripts -->
+		<script>
+			const menu = document.getElementsByClassName('menu')[0];
+			const navbar = document.getElementsByClassName('navbar')[0];
+			const navitem = document.getElementsByClassName('nav-item');
+
+			menu.onclick = function (e) {
+				navbar.style.display = "block";
+			};
+			
+			for (let i = 0; i < navitem.length; i++) {
+				navitem[i].onclick = function (e) {
+					navbar.style.display = "none";
+				};
+			}
+			
+		</script>
 	</body>
 </html>
