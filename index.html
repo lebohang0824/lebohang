@@ -25,6 +25,7 @@
 
 	<body>
 		<div class="navbar">
+			<a href="javascript:void(0)" id="close">x</a>
 			<ul>
 				<li><a class="nav-item" href="#home">Home</a></li>
 				<li><a class="nav-item" href="#about">About</a></li>
@@ -177,12 +178,17 @@
 
 		<!-- Scripts -->
 		<script>
+			const closeBtn = document.getElementById('close');
 			const menu = document.getElementsByClassName('menu')[0];
 			const navbar = document.getElementsByClassName('navbar')[0];
 			const navitem = document.getElementsByClassName('nav-item');
 
 			menu.onclick = function (e) {
 				navbar.style.display = "block";
+			};
+
+			closeBtn.onclick = function (e) {
+				navbar.style.display = "none";
 			};
 			
 			for (let i = 0; i < navitem.length; i++) {

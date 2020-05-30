@@ -7,6 +7,16 @@
     position: fixed;
     display: none;
     background-color: transparentize(darken(#3498DB, 60%), .05);
+    #close {
+        top: 20px;
+        right: 20px;
+        color: #FFF;
+        font-size: 25px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #222;
+        padding: 5px 15px 10px 15px;
+    }
     ul {
         margin: 0;
         padding: 0;

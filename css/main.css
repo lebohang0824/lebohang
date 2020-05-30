@@ -318,6 +318,16 @@ a {
   display: none;
   background-color: rgba(0, 0, 0, 0.95);
 }
+.navbar #close {
+  top: 20px;
+  right: 20px;
+  color: #FFF;
+  font-size: 25px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #222;
+  padding: 5px 15px 10px 15px;
+}
 .navbar ul {
   margin: 0;
   padding: 0;
